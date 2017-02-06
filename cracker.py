@@ -16,6 +16,9 @@ def compareHash(hashedPW):
 def main():
     if len(sys.argv) != 3:
         print('\nUsage: cracker.py [file_of_password] [salt]\n')
+        print('{0:<4} {1:16}'.format('(1)', 'Generates a file of hashed passwords by accepting a file with a list of passwords and salt (normally two letters).'))
+        print('{0:<4} {1:16}'.format('(2)', 'The file containing hashed passwords generated in (1) is compared to a hashed entries of a Dictionary and reveals match if found. \n'))
+
         return
 
     salt = sys.argv[2] 
